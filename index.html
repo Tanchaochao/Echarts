@@ -7,7 +7,7 @@
 	<title>echarts</title>
 	<style type="text/css">
 		#main{
-			height: 500px;
+			height: 200px;
 			width: 500px;
 		}
 	</style>
@@ -17,7 +17,7 @@
 </body>
 <script src="echarts.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-var myChart = echarts.init(document.getElementById('main'));
+	var myChart = echarts.init(document.getElementById('main'));
 var option = {
 
 	tooltip: {
@@ -98,8 +98,8 @@ var option = {
 			normal: {
 				label: {
 					show: true,
-					formatter: '{d}%',
-					position: 'inner'
+					formatter: '{b}({d}%)'
+					
 				},
 				labelLine: {
 					show: true
